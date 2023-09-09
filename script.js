@@ -15,7 +15,7 @@ const matches_section = document.getElementById("matches_section")
         .then(function (data) {
             for (let i = 0; i < data.Stages.length; i++) {
                 for (let j = 0; j < data.Stages[i].Events.length; j++) {
-                    matches_section.innerHTML += "<tr><th scope=\"row\">" + (i + 1) + "</th><td>" + data.Stages[i].Snm + "</td><td>" + data.Stages[i].Cnm + "</td><td></td><td>" + data.Stages[i].Events[j].T1[0].Nm + " VS " + data.Stages[i].Events[j].T2[0].Nm + "</td>"
+                    matches_section.innerHTML += "<tr><th scope=\"row\">" + (i + 1) + "</th><td>" + data.Stages[i].Snm + "</td><td>" + data.Stages[i].Cnm + "</td><td>" + data.Stages[i].Events[j].T1[0].Nm + " VS " + data.Stages[i].Events[j].T2[0].Nm + "</td>"
                 }
             }
         });
