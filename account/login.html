@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="register_form">
+        <div>
+            <h1>Đăng nhập</h1>
+            <p>Chưa có tài khoản? <a href="index.html" style="color: orange;">Đăng ký ngay</a></p>
+        </div>
+        <div>
+            <p>Email</p>
+            <input type="text" class="register" id="email" placeholder="Nhập Email">
+            <p id="emailError"></p>
+            <p>Mật khẩu</p>
+            <input type="password" class="register" id="password" placeholder="Nhập mật khẩu">
+            <p id="passError"></p>
+        </div>
+        <div>
+            <div>
+                <button type="submit" id="register_button" onclick="check()">Đăng nhập</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
