@@ -14,7 +14,8 @@ const news_section = document.getElementById("news_section")
         })
         .then(function (data) {
             for (let i = 0; i < data.topStories.length; i++) {
-                news_section.innerHTML += "<div class=\"d-flex p-2 justify-content-center align-items-center flex-column\">" + "<a target=\"_blank\" href=\"https://livescore.com" + data.topStories[i].url + "\"><img width=\"300px\" src=\"" + data.topStories[i].mainMedia[0].thumbnail.url + "\"></a><a target=\"_blank\" href=\"https://livescore.com" + data.topStories[i].url + "\"><h6 style=\"width: 300px;\">" + data.topStories[i].title + "</h6></a>" + "</div>"
+
+                news_section.innerHTML += "<div class=\"news_item\">" + "<div class=\"card\" style=\"width: 18rem;\"> <img src=\"" + data.topStories[i].mainMedia[0].thumbnail.url + "\" class=\"card-img-top\"> <div class=\"card-body\"> <h5 class=\"card-title\">" + data.topStories[i].title + "</h5> <a target=\"_blank\" href=\"https://livescore.com" + data.topStories[i].url + "\" class=\"btn btn-primary\">Xem chi tiết</a> </div> </div>" + "</div>"
+
             }
         });
-    console.log(news);

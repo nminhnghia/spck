@@ -19,4 +19,3 @@ const matches_section = document.getElementById("matches_section")
                 }
             }
         });
-    console.log(news);

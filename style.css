@@ -2,16 +2,17 @@ img {
     width: 300px;
     height: auto;
 }
-#news, #news_content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 #news_section {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+.news_item {
+    padding: 20px;
+}
+
+.title {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    width: 100%;
 }
