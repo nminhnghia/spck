@@ -2,6 +2,7 @@ let email = document.getElementById("email")
 let password = document.getElementById("password")
 let emailError = document.getElementById("emailError")
 let passError = document.getElementById("passError")
+let accounts = JSON.parse(localStorage.getItem("accounts"))
 function check() {
     let valueEmail = email.value
     let valuePassword = password.value
@@ -19,6 +20,12 @@ function check() {
         passError.style = "color: red; display: block;"
     } else { // nếu đã nhập password thì sẽ không báo lỗi
         passError.style = "display: none;"
+    }
+    if (accounts[valueEmail] == valuePassword) {
+        localStorage.setItem(activeAccount, valueEmail)
+        window.location.href = "../../../index.html";
+    } else {
+        alert("Email hoặc mật khẩu không đúng")
     }
 }
 
