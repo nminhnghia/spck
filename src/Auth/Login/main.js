@@ -22,7 +22,7 @@ function check() {
         passError.style = "display: none;"
     }
     if (accounts[valueEmail] == valuePassword) {
-        localStorage.setItem(activeAccount, valueEmail)
+        localStorage.setItem("activeAccount", valueEmail)
         window.location.href = "../../../index.html";
     } else {
         alert("Email hoặc mật khẩu không đúng")

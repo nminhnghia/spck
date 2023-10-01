@@ -5,5 +5,7 @@ function register() {
     accounts = JSON.parse(accounts);
     accounts[email.value] = password.value;
     localStorage.setItem("accounts", JSON.stringify(accounts));
+    alert("Đăng ký thành công")
+    window.location.href = "../Login/Login.html";
 }
 
