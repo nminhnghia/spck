@@ -1,5 +1,4 @@
 let activeAccount = localStorage.getItem("activeAccount")
-let checkAccount = document.getElementById("checkAccount")
 let loginbutton = document.getElementById("loginbutton")
 let registerbutton = document.getElementById("registerbutton")
 if (activeAccount.includes("@") || activeAccount.includes(".")) {
